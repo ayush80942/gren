@@ -84,9 +84,7 @@ class _LogInPageState extends State<LogInPage> {
             ),
             SizedBox(height: 36),
             ElevatedButton(
-              onPressed: () {
-                
-                },
+              onPressed: () {},
               style: ElevatedButton.styleFrom(
                 fixedSize: Size.fromWidth(340),
                 shape: RoundedRectangleBorder(
@@ -123,7 +121,12 @@ class _LogInPageState extends State<LogInPage> {
                 ),
                 TextButton(
                   onPressed: () {
-Navigator.push(context, MaterialPageRoute(builder: (context) => SignUpScreen(),),);
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => SignUpScreen(),
+                      ),
+                    );
                   },
                   child: Text(
                     "SignUp",

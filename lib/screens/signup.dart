@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gren/screens/dashboard.dart';
 import 'package:gren/screens/login.dart';
 
 class SignUpScreen extends StatefulWidget {
@@ -157,7 +158,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
             SizedBox(height: 36),
             ElevatedButton(
               onPressed: () {
-                
+                Navigator.push(context, MaterialPageRoute(builder: (context) => DashboardScreen(),),);
               },
               style: ElevatedButton.styleFrom(
                 fixedSize: Size.fromWidth(340),
